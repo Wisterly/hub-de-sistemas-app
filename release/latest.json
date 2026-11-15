@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.12",
+  "versionCode": 1013,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.12/hub-0.1.12.apk",
+  "sha256": "3e6a9ebaf6155e7936839cb10ce1b55e68484521c0ef0c8ae4a15fbf2a3c82e7",
+  "releaseNotes": "- Fixa como padrão definitivo as dimensões e o posicionamento aprovados para o carrossel (1240 × 600 px, cartas de 397 × 360 px, mesa de 236 px em Y = 466 px e deslocamento Y de −60 px).\n- Remove a interface temporária de redimensionamento e movimentação, mantendo o layout limpo e finalizado.",
+  "mandatory": false
+}

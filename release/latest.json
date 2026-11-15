@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.13",
+  "versionCode": 1014,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.13/hub-0.1.13.apk",
+  "sha256": "6333f43a1dd7e05969426a360d26382bc9a9ce80e52928ded9514bad58dbdf03",
+  "releaseNotes": "- Trava o documento (`html, body`) e o contêiner principal (`.hub-shell`) na altura exata da tela (`100dvh`) com `overflow: hidden`, eliminando a barra de rolagem vertical gerada pela reserva de layout do `translateY(-60px)` sem alterar a posição visual do carrossel.",
+  "mandatory": false
+}

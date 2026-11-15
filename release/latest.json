@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.1",
+  "versionCode": 1002,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.1/hub-0.1.1.apk",
+  "sha256": "edf2bc07be65db1b3209a320223d40274605c30409970faa17ec75195d41e9b6",
+  "releaseNotes": "- O carrossel responde ao gesto horizontal do trackpad mesmo quando o navegador já iniciou uma sequência de rolagem.",
+  "mandatory": false
+}

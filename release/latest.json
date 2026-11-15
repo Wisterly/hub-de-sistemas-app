@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.19",
+  "versionCode": 1020,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.19/hub-0.1.19.apk",
+  "sha256": "a98fea13fda8a472971e5e1eb454bc9eaeea3d146f04a014cb2cd2df79799c9a",
+  "releaseNotes": "- Adiciona a logo institucional da Secretaria da Educação (SEDUC) e do Governo do Piauí no canto inferior direito da tela, com contraste em branco para o fundo escuro, preservando as cores originais da marca e do mapa.\n- Atualiza a frase do subtítulo institucional no cabeçalho para \"Tecnologia e inteligência unidas na gestão\".\n- Adiciona regras de responsividade para a logo institucional em dispositivos móveis e telas reduzidas.",
+  "mandatory": false
+}

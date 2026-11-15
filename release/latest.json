@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.17",
+  "versionCode": 1018,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.17/hub-0.1.17.apk",
+  "sha256": "02ba00d12ef29f0dc4c639f38b86ba7a9d46ffc46838ed0e1ef6c7347ab058f4",
+  "releaseNotes": "- Atualiza o nome da marca no manifesto PWA (`manifest.webmanifest`) e nos metadados de release Android para **Hub Seduc.Lab**.",
+  "mandatory": false
+}

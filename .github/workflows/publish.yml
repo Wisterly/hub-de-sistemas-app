@@ -44,8 +44,21 @@ jobs:
           jq -e --arg version "$version" --arg package "$HUB_ANDROID_PACKAGE_ID" --arg hash "$checksum" \
             --arg url "https://github.com/$GITHUB_REPOSITORY/releases/download/$tag/$apk" \
             '.channel == "stable" and .versionName == $version and .packageId == $package and .sha256 == $hash and .downloadUrl == $url' latest.json >/dev/null
-          sdkmanager 'build-tools;36.0.0'
-          tools="$ANDROID_HOME/build-tools/36.0.0"
+          sdk="${ANDROID_HOME:-$RUNNER_TEMP/android-sdk}"
+          manager="$(command -v sdkmanager || true)"
+          if [[ -z "$manager" ]]; then
+            tools="$RUNNER_TEMP/android-tools.zip"
+            curl -fsSL --retry 3 -o "$tools" https://dl.google.com/android/repository/commandlinetools-linux-15859902_latest.zip
+            printf '%s  %s\n' '4e4c464f145a7512b57d088ac6c278c03c9eea610886b35a5e0804e74eedf583' "$tools" | sha256sum -c
+            mkdir -p "$sdk/cmdline-tools"
+            unzip -q "$tools" -d "$sdk/cmdline-tools"
+            manager="$sdk/cmdline-tools/cmdline-tools/bin/sdkmanager"
+          fi
+          set +o pipefail
+          yes | "$manager" --sdk_root="$sdk" --licenses >/dev/null
+          set -o pipefail
+          "$manager" --sdk_root="$sdk" 'build-tools;36.0.0'
+          tools="$sdk/build-tools/36.0.0"
           cert="$("$tools/apksigner" verify --print-certs "$apk" | sed -n 's/^Signer #1 certificate SHA-256 digest: //p')"
           test "$cert" = "$HUB_ANDROID_SIGNER_SHA256"
           badging="$("$tools/aapt2" dump badging "$apk")"

@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.9",
+  "versionCode": 1010,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.9/hub-0.1.9.apk",
+  "sha256": "c4c000824ef89836f21cb83e4d36870c4a1ac3fbe6a9f0955a4af7379208d3de",
+  "releaseNotes": "- Ajusta a caixa de seleção do redimensionador para encaixar perfeitamente no carrossel, alinhando a borda superior a ~14 px acima do card traseiro e as laterais rentes às pontas ovais da base (mesa), garantindo precisão ao redimensionar em proporção.",
+  "mandatory": false
+}

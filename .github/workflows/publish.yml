@@ -1,0 +1,72 @@
+name: Publicar APK assinado
+
+on:
+  push:
+    branches: ['incoming/v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar-canal-android
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: startsWith(github.ref, 'refs/heads/incoming/v')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      HUB_ANDROID_PACKAGE_ID: ${{ vars.HUB_ANDROID_PACKAGE_ID }}
+      HUB_ANDROID_SIGNER_SHA256: ${{ vars.HUB_ANDROID_SIGNER_SHA256 }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Verificar APK, certificado e ordem
+        run: |
+          set -euo pipefail
+          tag="${GITHUB_REF_NAME#incoming/}"
+          [[ "$tag" =~ ^v(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$ ]]
+          version="${tag#v}"
+          [[ "$HUB_ANDROID_SIGNER_SHA256" =~ ^[a-f0-9]{64}$ ]]
+          apk="hub-$version.apk"
+          grep -Eq "^[a-f0-9]{64}  hub-[0-9]+\.[0-9]+\.[0-9]+\.apk$" release/SHA256SUMS.txt
+          test "$(wc -l < release/SHA256SUMS.txt)" -eq 1
+          cd release
+          sha256sum --strict -c SHA256SUMS.txt
+          checksum="$(sha256sum "$apk" | cut -d' ' -f1)"
+          code="$(jq -e '.versionCode | select(type == "number" and . > 0 and . <= 2100000000 and . == floor)' latest.json)"
+          min_sdk="$(jq -e '.minAndroidSdk | select(type == "number" and . >= 24 and . == floor)' latest.json)"
+          jq -e --arg version "$version" --arg package "$HUB_ANDROID_PACKAGE_ID" --arg hash "$checksum" \
+            --arg url "https://github.com/$GITHUB_REPOSITORY/releases/download/$tag/$apk" \
+            '.channel == "stable" and .versionName == $version and .packageId == $package and .sha256 == $hash and .downloadUrl == $url' latest.json >/dev/null
+          sdkmanager 'build-tools;36.0.0'
+          tools="$ANDROID_HOME/build-tools/36.0.0"
+          cert="$("$tools/apksigner" verify --print-certs "$apk" | sed -n 's/^Signer #1 certificate SHA-256 digest: //p')"
+          test "$cert" = "$HUB_ANDROID_SIGNER_SHA256"
+          badging="$("$tools/aapt2" dump badging "$apk")"
+          grep -F "package: name='$HUB_ANDROID_PACKAGE_ID' versionCode='$code' versionName='$version'" <<< "$badging"
+          grep -Fx "sdkVersion:'$min_sdk'" <<< "$badging"
+          status="$(curl --silent --show-error --location --max-time 20 -o "$RUNNER_TEMP/previous.json" -w '%{http_code}' \
+            "https://github.com/$GITHUB_REPOSITORY/releases/latest/download/latest.json")"
+          case "$status" in
+            200) previous="$(jq -e '.versionCode | select(type == "number")' "$RUNNER_TEMP/previous.json")"
+                 (( code > previous ));;
+            404) ;;
+            *) exit 1;;
+          esac
+      - name: Publicar como release estável
+        run: |
+          set -euo pipefail
+          tag="${GITHUB_REF_NAME#incoming/}"
+          if gh release view "$tag" --json isDraft --jq .isDraft > "$RUNNER_TEMP/hub-draft"; then
+            test "$(cat "$RUNNER_TEMP/hub-draft")" = true
+          else
+            gh release create "$tag" --target main --draft --title "Hub de Sistemas $tag" --notes-file release/CHANGELOG.md
+          fi
+          gh release upload "$tag" "release/hub-${tag#v}.apk" release/SHA256SUMS.txt release/latest.json release/CHANGELOG.md --clobber
+          gh release edit "$tag" --draft=false --latest

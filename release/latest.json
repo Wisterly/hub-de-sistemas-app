@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.7",
+  "versionCode": 1008,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.7/hub-0.1.7.apk",
+  "sha256": "afbf706fcc0c088021c025efbbd95d7b173c36874216188ae603917045a37c2b",
+  "releaseNotes": "- Ajusta as dimensões e o posicionamento do modelo Fundo elevado para cartas de 204 px de altura, base frontal em 284 px, laterais em 264 px e fundo em 228 px.",
+  "mandatory": false
+}

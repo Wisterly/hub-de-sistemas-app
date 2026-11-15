@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.3",
+  "versionCode": 1004,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.3/hub-0.1.3.apk",
+  "sha256": "3f7a8d6086b72c4dade97a4bfed70d500eb3d26c3e283ce5a71340daaeb9c6a2",
+  "releaseNotes": "- Inclui OrçaCraft.lab no carrossel e na busca, com acesso pendente até receber o endereço do projeto.\n- Alonga as cartas, simplifica o nome MediSEI.lab e remove a indicação visual de acesso em Controle de Obras e OrçaBase.lab. As duas cartas continuam clicáveis por inteiro.",
+  "mandatory": false
+}

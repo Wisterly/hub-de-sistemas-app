@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.10",
+  "versionCode": 1011,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.10/hub-0.1.10.apk",
+  "sha256": "c73ac5d5b21c888ed31b6c09a9bc0b76f4f6ec9ec5b9e4e544d2a1ba03c503ad",
+  "releaseNotes": "- Centraliza verticalmente o carrossel no espaço útil da tela em layout flexível sem rolagem (tela única sem scroll).\n- Adiciona botões de ajuste vertical (↑ Subir e ↓ Descer) e suporte ao deslocamento Y no redimensionador interativo com persistência.",
+  "mandatory": false
+}

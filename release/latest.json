@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.14",
+  "versionCode": 1015,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.14/hub-0.1.14.apk",
+  "sha256": "8fec505edc24434e06f1c85c8b00288bc1da06cd1229a0ec3327af43d197b637",
+  "releaseNotes": "- Atualiza o plano de fundo e acabamento visual do card **Controle de Obras** de acordo com o novo modelo aprovado (composição arquitetônica com planta baixa, perspectiva de sala de aula, corredor e planilha de medições, brilho âmbar/laranja superior direito e ícone branco).",
+  "mandatory": false
+}

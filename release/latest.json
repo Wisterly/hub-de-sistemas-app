@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.8",
+  "versionCode": 1009,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.8/hub-0.1.8.apk",
+  "sha256": "1a3172c90375dc7b01fab9511a208d4b1adc5b00925d634815ce9ba523ccdfcd",
+  "releaseNotes": "- Adiciona a interface interativa de redimensionamento do carrossel diretamente no hub com alças nos 4 cantos e bordas, permitindo ajustar a escala e proporção no navegador e salvar com persistência local.",
+  "mandatory": false
+}

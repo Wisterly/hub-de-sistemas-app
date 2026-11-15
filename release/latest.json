@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.20",
+  "versionCode": 1021,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.20/hub-0.1.20.apk",
+  "sha256": "c623931c3576af04bc55b714be5ef5afe929d07763e9866deca83dc1f91b3ccb",
+  "releaseNotes": "- Atualiza as frases de resumo dos sistemas nos cards:\n  - **Controle de Obras**: \"Gestão integrada das obras.\"\n  - **OrçaBase.lab**: \"Compatibilize planilhas e gere memoriais descritivos.\"\n  - **OrçaCraft.lab**: \"Selecione os serviços e gere o orçamento do contrato.\"\n- Adiciona tipografia moderna, sofisticada e futurista (Space Grotesk) para as frases dos cards.\n- Reduz a escala da fonte das frases para dispositivos móveis e aplicativo Android (`clamp(8.5px, 2.3cqi, 10px)`), mantendo alta legibilidade e proporções equilibradas sobre as artes dos cards.",
+  "mandatory": false
+}

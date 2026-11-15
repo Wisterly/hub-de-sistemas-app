@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.5",
+  "versionCode": 1006,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.5/hub-0.1.5.apk",
+  "sha256": "5a87e710ab8e9d6620e6ccd348e2f229cbc1679fdd0b381b935b8bc7fd79f108",
+  "releaseNotes": "- Adapta o carrossel ao modelo Fundo elevado, com mesa oval, carta traseira visível e giros sincronizados de um quarto de volta.",
+  "mandatory": false
+}

@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.0",
+  "versionCode": 1001,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.0/hub-0.1.0.apk",
+  "sha256": "4bd13b42ffff603daa9560c7b302fb6380589f45806d3babf424b0cd80b768ff",
+  "releaseNotes": "- Carrossel 3D com os três sistemas iniciais, pesquisa, navegação por teclado, gestos e controles de seleção.\n- Preferências locais, instalação PWA e acesso ao catálogo offline após a primeira visita.\n- Projeto Android compartilhado com o frontend web. O app busca atualizações na abertura, ao voltar para ele ou ao puxar a tela para baixo. O canal estável usa APK assinado, manifesto de release e confirmação pelo instalador Android.",
+  "mandatory": false
+}

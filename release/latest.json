@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.2",
+  "versionCode": 1003,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.2/hub-0.1.2.apk",
+  "sha256": "1e10f7761c3ba2e477a5e8062ac5e66cae31acc3058320eef238809290662166",
+  "releaseNotes": "- Cartões mais estreitos e altos, com brilho estável ao passar o ponteiro.\n- Toda a superfície de cada cartão abre diretamente o sistema correspondente.\n- Cartas laterais inclinadas 30 graus para a direita e carta selecionada de frente, no centro.",
+  "mandatory": false
+}

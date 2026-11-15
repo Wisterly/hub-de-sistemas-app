@@ -50,7 +50,7 @@ jobs:
           test "$cert" = "$HUB_ANDROID_SIGNER_SHA256"
           badging="$("$tools/aapt2" dump badging "$apk")"
           grep -F "package: name='$HUB_ANDROID_PACKAGE_ID' versionCode='$code' versionName='$version'" <<< "$badging"
-          grep -Fx "sdkVersion:'$min_sdk'" <<< "$badging"
+          grep -Fx "minSdkVersion:'$min_sdk'" <<< "$badging"
           status="$(curl --silent --show-error --location --max-time 20 -o "$RUNNER_TEMP/previous.json" -w '%{http_code}' \
             "https://github.com/$GITHUB_REPOSITORY/releases/latest/download/latest.json")"
           case "$status" in

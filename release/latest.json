@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.24",
+  "versionCode": 1025,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.24/hub-0.1.24.apk",
+  "sha256": "14b9cf961637abfcc427333f4d999deb3aeebe675670f5eb1dfd742969088c1d",
+  "releaseNotes": "- Restringe a abertura de links externos exclusivamente ao card frontal ativo. Cards laterais ou de fundo não funcionam como links diretos.\n- Ao clicar em qualquer card lateral ou traseiro do carrossel, o sistema gira suavemente o carrossel trazendo o card selecionado para a frente; somente após estar no topo frontal um novo clique abre o sistema.\n- Remove a etiqueta/indicador \"Sistema Selecionado\" dos cards, mantendo o visual limpo, sofisticado e alinhado aos padrões de design.",
+  "mandatory": false
+}

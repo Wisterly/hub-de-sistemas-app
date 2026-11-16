@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.23",
+  "versionCode": 1024,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.23/hub-0.1.23.apk",
+  "sha256": "9884987c28a482f2ee5fe0f0fcfc780b4fc000a7d39fe635e32dd45530b21ff3",
+  "releaseNotes": "- Adiciona interface dedicada no painel de \"Perfil e preferências\" (\"Baixar aplicativo Android\") para listar e baixar diretamente no próprio Hub os aplicativos Android oficiais de todos os projetos (Hub Seduc.Lab, Controle de Obras, OrçaBase.lab, OrçaCraft.lab e MediSEI.lab).\n- Implementa download direto instantâneo sem abrir novas abas ou redirecionar para páginas externas.\n- Habilita auto-atualização silenciosa e transparente da versão web do Hub ao entrar (`registerType: 'autoUpdate'`), sem exigir cliques manuais em avisos de atualização.\n- Redireciona o painel de notificações para alertar exclusivamente sobre novas versões e atualizações dos aplicativos Android dos projetos, com botão direto de download do APK para cada projeto.",
+  "mandatory": false
+}

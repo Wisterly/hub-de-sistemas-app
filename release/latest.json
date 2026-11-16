@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.22",
+  "versionCode": 1023,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.22/hub-0.1.22.apk",
+  "sha256": "d35aa2c5a94f496cb087c2fcc9b909d10b4d81ddd5f06da7faed7a1968fcc177",
+  "releaseNotes": "- Atualiza o endereço oficial de produção do Hub na Vercel para `https://hub-de-sistemas-gpr.vercel.app/`.",
+  "mandatory": false
+}

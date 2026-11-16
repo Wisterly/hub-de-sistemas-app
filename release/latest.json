@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.21",
+  "versionCode": 1022,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.21/hub-0.1.21.apk",
+  "sha256": "7bf28d56cb1274af19bb90ac2ddc416cba05bb33ae6bc9f5ba342f0f07f46fdf",
+  "releaseNotes": "- Eleva a posição vertical da logo institucional da SEDUC / Governo do Piauí (`position: fixed; bottom: clamp(28px, 3.8vh, 38px)`), impedindo que fique oculta ou cortada pela barra de tarefas do Windows ou limites inferiores do navegador, mantendo o tamanho e proporções originais.",
+  "mandatory": false
+}

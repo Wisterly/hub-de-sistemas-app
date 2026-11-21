@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.26",
+  "versionCode": 1027,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.26/hub-0.1.26.apk",
+  "sha256": "2f7458f86c07b786f3e2c3e6a88447116a3a76b69b604bf14cc98ac8e6b9f1c9",
+  "releaseNotes": "- Aplica blindagem com fallback rigoroso (`?.trim() ||`) em todas as URLs dos sistemas do catálogo, impedindo que variáveis de ambiente em branco ou nulas em provedores de hospedagem (como Vercel) desativem os links.\n- Revalida e consolida o link direto do OrçaCraft.lab (`https://orcacraft-lab.vercel.app/`).",
+  "mandatory": false
+}

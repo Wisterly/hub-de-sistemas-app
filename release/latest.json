@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.27",
+  "versionCode": 1028,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.27/hub-0.1.27.apk",
+  "sha256": "c1f3fbc462d64fb31edbb76b27915693dceabbd7c68df091e135c57d914c5bc7",
+  "releaseNotes": "- Atualiza o endereço oficial de produção do Hub na Vercel para `https://hub-de-sistemas.vercel.app/`.",
+  "mandatory": false
+}

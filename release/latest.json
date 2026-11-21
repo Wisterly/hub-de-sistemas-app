@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.25",
+  "versionCode": 1026,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.25/hub-0.1.25.apk",
+  "sha256": "d4d3ff2482e0aa6336310ce4f5a28dd1308a259dfbfdb1a492525dafa0be9f54",
+  "releaseNotes": "- Adiciona a URL oficial do sistema OrçaCraft.lab (`https://orcacraft-lab.vercel.app/`), permitindo acesso direto e instantâneo a partir do card frontal ativo no Hub.\n- Atualiza tags de busca e integração do OrçaCraft.lab no catálogo de sistemas.",
+  "mandatory": false
+}

@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.29",
+  "versionCode": 1030,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.29/hub-0.1.29.apk",
+  "sha256": "8d0e65057914283d3a6ebd44fbe167be749968758d6b49577665a950e1cb1281",
+  "releaseNotes": "- Reforça a proteção contra abertura acidental de links: cards laterais e de fundo funcionam exclusivamente para girar o carrossel e trazer o sistema para a frente.\n- Aplica trava temporal durante a transição orbital (`activatedAt`), impedindo que toques ou cliques consecutivos no momento da rotação abram links externos antes que o card esteja estabilizado no topo frontal.\n- Adiciona cursor pointer e interceptação de clique em todo o slot do cartão inativo.",
+  "mandatory": false
+}

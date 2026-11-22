@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.30",
+  "versionCode": 1031,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.30/hub-0.1.30.apk",
+  "sha256": "c06afda706508dbd64829373b12d850e137c97851f7a917221d807f92e0a0418",
+  "releaseNotes": "- Incorpora diretamente na aba de \"Perfil e preferências\" a pasta/central de aplicativos dos projetos, listando cada sistema (Hub Seduc.Lab, Controle de Obras, OrçaBase.lab, OrçaCraft.lab e MediSEI.lab) com sua versão mais recente, identificação do projeto, nome do instalador APK e botão para download direto instantâneo.\n- Alinha a experiência do perfil com o painel de notificações de aplicativos atualizados, garantindo acesso completo e centralizado aos instaladores Android de cada sistema.\n- Disponibiliza o botão dedicado de instalação do Hub no celular (PWA/Android) com orientações integradas para diferentes navegadores e dispositivos.\n- Mantém o modal completo de aplicativos Android acessível para visualização detalhada em tela cheia.",
+  "mandatory": false
+}

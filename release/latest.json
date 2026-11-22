@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.31",
+  "versionCode": 1032,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.31/hub-0.1.31.apk",
+  "sha256": "df916fc13b0bc3f45b2c9a864924fb69e83eba2a3acc3241a2c442b87ea2e468",
+  "releaseNotes": "- Remove completamente o borrão/brilho âmbar alaranjado do canto superior direito do card **Controle de Obras**, unificando o plano de fundo em um gradiente suave na tonalidade roxo/violeta escuro do card e do ícone.\n- Harmoniza as bordas e o brilho do card ativo de Controle de Obras em tons magenta e violeta (`#bd7bff`, `#f7ccff`, `#f95efe`, `#e569ff`), eliminando qualquer reflexo ou tonalidade laranja residual.",
+  "mandatory": false
+}

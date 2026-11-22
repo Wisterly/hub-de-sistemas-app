@@ -1,0 +1,11 @@
+{
+  "channel": "stable",
+  "versionName": "0.1.33",
+  "versionCode": 1034,
+  "packageId": "io.github.wisterly.hubdesistemas",
+  "minAndroidSdk": 24,
+  "downloadUrl": "https://github.com/Wisterly/hub-de-sistemas-app/releases/download/v0.1.33/hub-0.1.33.apk",
+  "sha256": "18a24ee17a0d481e6ab93eeaf00c2f2c6aa0ee856fb576730da977259a78ac1e",
+  "releaseNotes": "- Posiciona a central de **Aplicativos dos Projetos** no topo da aba de três pontinhos (Opções e Aplicativos), incorporando o botão de destaque **Visualizar todos os aplicativos** para visualização completa em modal e download direto de cada APK.\n- Harmoniza a lista de aplicativos no painel de opções para seguir o mesmo formato de cards e ações das notificações (`notification-alert-item`), com realce lateral nas cores temáticas de cada projeto e botão direto \"Baixar aplicativo\".\n- Mantém o botão de visualização de todos os aplicativos acessível também na aba de Notificações, mesmo após a limpeza ou ausência de alertas pendentes.",
+  "mandatory": false
+}
